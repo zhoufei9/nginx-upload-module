@@ -5,7 +5,14 @@ This module is based on Nginx upload module (v 2.2.0) http://www.grid.net.ru/ngi
 Since it seems the author has not maintained that module. I changed some codes that can be installed with latest nginx.
 
 - install
-./configure --add-module={module_dir} && make && make install
+
+    #need to recompile nginx
+
+    ./configure --add-module={module_dir} 
+  
+     make 
+ 
+    make install
 
 - conf
 ```
